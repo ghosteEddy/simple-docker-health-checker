@@ -1,0 +1,5 @@
+services:
+    health-checker:
+        build: ./healthcheck
+        volumes:
+            - ./healthcheck.json:/checker/config.json
